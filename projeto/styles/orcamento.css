@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+.logo{
+    color: white;
+    font-size: 20px;
+}
+
+nav{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #aa882c;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    margin-right: 25px;
+}
+li:hover{
+    transform: scale(1.2);
+}
+
+ul a{
+    color: white;
+}
+
+/*catalogo*/
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    margin-right: 25px;
+    width: 300px;
+    padding: 7px;
+    padding-left: 15px;
+    border-radius: 25px;
+    border-style: none;
+}
+
+
+.sidebar{
+    width: 200px;
+    height: 90vh;
+    border-right: 2px dotted black;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+}
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.sidebar li{
+    cursor: pointer;
+}
+
+.tattoos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
