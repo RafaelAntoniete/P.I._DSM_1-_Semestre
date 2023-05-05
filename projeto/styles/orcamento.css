@@ -13,31 +13,43 @@
     font-size: 20px;
 }
 
-nav{
+nav {
     width: 100%;
-    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #aa882c;
     position: fixed;
     top: 0;
     z-index: 1;
+    background-color: #aa882c;
 }
 
-ul{
+ul {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-li{
-    margin-right: 25px;
-}
-li:hover{
-    transform: scale(1.2);
-}
-
-ul a{
+li a {
     color: white;
+    display:block;
+    padding: 16px 16px;
+    
+}
+
+li a:hover {
+    background-color: #55555559;
+    color: #fff;
+}
+
+.search {
+    margin-right: 25px;
+    width: 300px;
+    height: 35px;
+    padding: 7px;
+    padding-left: 15px;
+    border-radius: 25px;
+    border-style: none;
 }
 
 /*catalogo*/
