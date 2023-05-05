@@ -68,10 +68,10 @@ ul a {
 .home button {
     appearance: none;
     background-color: transparent;
-    border: 0.125em solid #1A1A1A;
+    border: 0.125em solid #ffffff;
     border-radius: 0.9375em;
     box-sizing: border-box;
-    color: #3B3B3B;
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
     font-size: 16px;

@@ -80,4 +80,24 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+/* Catalogo Cards*/
+.card{
+    padding: 25px;
+    background-color: #dcd9d9;
+    box-shadow: 9px 6px 10px -1px #a5a5a5;
+    border-radius: 5px;
+    text-align: center;
+}
+.card img{
+    width: 150px;
+}
+
+.card p{
+    font-size: 18px;
+    margin-top: 15px;
 }
