@@ -8,9 +8,10 @@
     list-style: none;
 }
 
-.logo{
+.logo {
     color: white;
     font-size: 20px;
+    margin-left: 20px;
 }
 
 nav {
