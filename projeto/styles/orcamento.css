@@ -18,9 +18,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    z-index: 1;
     background-color: #aa882c;
 }
 
@@ -57,8 +54,7 @@ section{
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
 }
 .search{
     margin-right: 25px;
@@ -68,25 +64,6 @@ section{
     border-radius: 25px;
     border-style: none;
 }
-
-
-.sidebar{
-    width: 200px;
-    height: 90vh;
-    border-right: 2px dotted black;
-    margin: 50px;
-    display: flex;
-    align-items: center;
-}
-.sidebar ul{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-.sidebar li{
-    cursor: pointer;
-}
-
 .tattoos{
     width: 100%;
     display: flex;
@@ -94,7 +71,6 @@ section{
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
-    height: 100vh;
 }
 
 /* Catalogo Cards*/
@@ -112,4 +88,27 @@ section{
 .card p{
     font-size: 18px;
     margin-top: 15px;
+}
+
+.btn_orcamento{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+}
+
+button {
+    width: 500px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #896e23;
+    color: white;
+}
+button:hover{
+    background-color: #745d1d;
+    color: #fff;
 }
