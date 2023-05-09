@@ -40,6 +40,12 @@ li a:hover {
     color: #fff;
 }
 
+li2{
+    color: white;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
 .search {
     margin-right: 25px;
     width: 300px;
@@ -48,6 +54,11 @@ li a:hover {
     padding-left: 15px;
     border-radius: 25px;
     border-style: none;
+}
+
+img{
+    width: 40px;
+
 }
 
 /*catalogo*/
@@ -89,6 +100,10 @@ section{
 .card p{
     font-size: 18px;
     margin-top: 15px;
+}
+
+.tattoos :hover{
+    background-color: #cacaca;
 }
 
 .btn_orcamento{
