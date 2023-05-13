@@ -14,20 +14,34 @@ body{
     justify-content: center;
     align-items: center;
 }
+body::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../public/background.webp');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f8f5f4;
+    z-index: -1;
+    opacity: 0.8;
+}
 
 div{
     width: 400px;
     height: 500px;
-    background: #aa882c;
+    background-color: #e4e3e1a1;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    box-shadow: 9px 6px 10px -1px #a5a5a5;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255, 0.125);
+    backdrop-filter: blur(-26px) saturate(51%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
     flex-direction: column;
 }
-h1{
-    margin-bottom: 40px;
+.logo{
+    margin-left: 33px;
 }
 
 input, button{
@@ -40,6 +54,7 @@ input, button{
 
 button{
     cursor: pointer;
+    background-color: #aa882c;
 }
 
 form{

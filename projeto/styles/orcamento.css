@@ -31,7 +31,7 @@ ul {
 li a {
     color: white;
     display:block;
-    padding: 16px 16px;
+    padding: 18px 18px;
     
 }
 
@@ -42,8 +42,7 @@ li a:hover {
 
 li2{
     color: white;
-    font-size: 13px;
-    margin-top: 30px;
+    padding-left: 16px;
 }
 
 .search {
@@ -56,8 +55,8 @@ li2{
     border-style: none;
 }
 
-img{
-    width: 40px;
+.card img{
+    width: 48px;
 
 }
 
