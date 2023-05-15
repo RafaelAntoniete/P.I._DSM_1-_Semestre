@@ -1,6 +1,6 @@
 const pass = {
     usuario: 'Rafael',
-    password: 1234
+    password: '1234'
 }
 
 const username = document.querySelector('#username')
@@ -15,7 +15,7 @@ function openWin(url, e){
 }
 login.addEventListener('click', (e)=>{
    
-    if(pass.usuario === username.value || pass.password === password.value) {
+    if(pass.usuario === username.value && pass.password === password.value) {
         return openWin(url, e)      
     } else {
         return window.alert('Senha ou Usuário Incorretos')
