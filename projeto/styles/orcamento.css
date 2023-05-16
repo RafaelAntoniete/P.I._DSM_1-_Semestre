@@ -100,6 +100,7 @@ section{
     height: 100%;
     display: flex;
     padding: 20px;
+    flex-direction: column;
 }
 .search{
     margin-right: 25px;
@@ -118,7 +119,17 @@ section{
     flex-wrap: wrap;
 }
 
+h1{
+    font-size: 70px;
+    text-align: center;
+    padding: 10px;
+    font-weight: normal;
+    font-family:'Lobster Two', cursive;;
+}
+
 /* Catalogo Cards*/
+
+
 .card{
     padding: 25px;
     background-color: #dcd9d9;

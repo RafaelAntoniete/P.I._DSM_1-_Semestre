@@ -30,7 +30,7 @@ body::before{
 div{
     width: 400px;
     height: 500px;
-    background-color: #e4e3e1b9;
+    background-color: #e4e3e1a1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,14 +64,4 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-p{
-    margin-top: 10px;
-}
-
-a{
-    color: black;
-    font-weight: bold;
-    
 }
