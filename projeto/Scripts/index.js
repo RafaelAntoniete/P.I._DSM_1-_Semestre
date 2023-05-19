@@ -14,3 +14,15 @@ function scrollfunction() {
         navbar.style.background = 'transparent'
     }
 }
+
+const personalize = document.querySelector('#personalize')
+const url = './personalize.html'
+
+function openWin(url, e){
+    e.preventDefault()
+    window.location.href = url
+}
+personalize.addEventListener('click', (e)=>{
+    console.log('isajdia') 
+    openWin(url, e)
+})

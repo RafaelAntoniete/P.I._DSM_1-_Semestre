@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/personalize.css">
+    <title>Personalize</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="logo"><img src="./public/logo 2.svg" alt="logo" width="150px"></span>
+            <ul class="menu">
+                <p>Olá, Usuário</p>
+                <li>
+                    <img src="./public/perfil_branco.png" alt="perfil">
+                    <ul>
+                        <li> <a href="./planos.html">Planos</a></li>
+                        <li> <a href="./config.html">Configuração</a></li>
+                        <li> <a href="./index.html">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="personalize">
+        <h1>Personalize</h1>
+        <form>
+            <label>Escolha o tamanho</label>
+            <select>
+              <option id="g" value="200">Grande</option>
+              <option value="150">Médio</option>
+              <option value="100">Pequeno</option>
+            </select>
+            <select>
+                <option id="v" value="300">verde</option>
+                <option value="300">Azul</option>
+                <option value="100">Preto</option>
+              </select>
+            <br><br>
+            <button id="calc">Calcular</button>
+          </form>
+    </section>
+    <div class=btn_orcamento>
+        <button id="catalogo">
+            Catalogo
+        </button>
+        <button id="personalize">
+            personalize
+        </button>
+    </div>
+
+    <script>
+        const catalogo = document.querySelector('#catalogo')
+            const url = './orcamento.html'
+            
+            function openWin(url, e){
+                e.preventDefault()
+                window.location.href = url
+            }
+            catalogo.addEventListener('click', (e)=>{
+                openWin(url, e)
+            })
+        const g = document.querySelector('#g')
+        const v = document.querySelector('#v')
+        const calc = document.querySelector('#calc')
+        function soma (val1, val2, e){
+            e.preventDefault()
+            return console.log(val1+val2)
+        }
+        calc.addEventListener('click', (e)=>{
+            soma(Number(g.value), Number(v.value), e)
+        })
+    </script>
+</body>
+
+</html>
