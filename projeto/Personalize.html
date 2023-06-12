@@ -29,23 +29,35 @@
             </ul>
         </nav>
     </header>
+
     <section class="personalize">
-        <h1>Personalize</h1>
-        <form>
-            <label>Escolha o tamanho</label>
-            <select>
-              <option id="g" value="200">Grande</option>
-              <option value="150">Médio</option>
-              <option value="100">Pequeno</option>
-            </select>
-            <select>
-                <option id="v" value="300">verde</option>
-                <option value="300">Azul</option>
-                <option value="100">Preto</option>
-              </select>
-            <br><br>
-            <button id="calc">Calcular</button>
-          </form>
+        <div class="select">
+            <label>
+                <span>Escolha o tamanho</span>
+                <select id="select_size" style="width: 100px;">
+                    <option value="0">----</option>
+                    <option value="100">Pequeno</option>
+                    <option value="150">Médio</option>
+                    <option value="200">Grande</option>
+                </select>
+            </label>
+           
+            <label>
+                <span>Escola a cor</span>
+                <select id="select_color" style="width: 100px;">
+                    <option value="0">----</option>
+                    <option value="300">verde</option>
+                    <option value="300">Azul</option>
+                    <option value="100">Preto</option>
+                  </select>
+            </label>
+            
+            <button class="calc">Calcular</button>
+            <p class="valor"></p>
+        </div>
+        <div class="imagem">
+            IMG
+        </div>
     </section>
     <div class=btn_orcamento>
         <button id="catalogo">
@@ -59,6 +71,9 @@
     <script>
         const catalogo = document.querySelector('#catalogo')
             const url = './orcamento.html'
+
+            let size = 0
+            let color = 0
             
             function openWin(url, e){
                 e.preventDefault()
@@ -67,16 +82,22 @@
             catalogo.addEventListener('click', (e)=>{
                 openWin(url, e)
             })
-        const g = document.querySelector('#g')
-        const v = document.querySelector('#v')
-        const calc = document.querySelector('#calc')
-        function soma (val1, val2, e){
-            e.preventDefault()
-            return console.log(val1+val2)
-        }
-        calc.addEventListener('click', (e)=>{
-            soma(Number(g.value), Number(v.value), e)
-        })
+        const calc = document.querySelector('.calc')
+
+        var s_size = document.getElementById('select_size')
+        var s_color = document.getElementById('select_color')
+        var valor = document.querySelector('.valor')
+
+    s_size.addEventListener('change', function(){
+        size = Number(s_size.value)
+    })
+    s_color.addEventListener('change', function(){
+        color = Number(s_color.value)
+    })
+
+    calc.addEventListener('click', function(){
+        valor.innerText=`O valor da tatuagem será: R$${size+color}`
+    })
     </script>
 </body>
 
