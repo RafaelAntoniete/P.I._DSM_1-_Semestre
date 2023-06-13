@@ -23,6 +23,5 @@ function openWin(url, e){
     window.location.href = url
 }
 personalize.addEventListener('click', (e)=>{
-    console.log('isajdia') 
     openWin(url, e)
 })

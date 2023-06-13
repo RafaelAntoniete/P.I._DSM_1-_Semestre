@@ -89,19 +89,7 @@ li a:hover {
     border-style: none;
 }
 
-.card img{
-    width: 48px;
 
-}
-
-.card{
-    width: 200px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
 
 /*catalogo*/
 section{
@@ -151,19 +139,92 @@ body::before{
 
 /* Catalogo Cards*/
 
+.card1 img{
+    width: 48px;
 
-.card{
+}
+
+.card1{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card1{
     padding: 25px;
     background-color: #dcd9d9;
     box-shadow: 9px 6px 10px -1px #a5a5a5;
     border-radius: 5px;
     text-align: center;
 }
-.card img{
+.card1 img{
     width: 150px;
 }
 
-.card p{
+.card1 p{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.card2 img{
+    width: 48px;
+
+}
+
+.card2{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card2{
+    padding: 25px;
+    background-color: #dcd9d9;
+    box-shadow: 9px 6px 10px -1px #a5a5a5;
+    border-radius: 5px;
+    text-align: center;
+}
+.card2 img{
+    width: 150px;
+}
+
+.card2 p{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.card3 img{
+    width: 48px;
+
+}
+
+.card3{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card3{
+    padding: 25px;
+    background-color: #dcd9d9;
+    box-shadow: 9px 6px 10px -1px #a5a5a5;
+    border-radius: 5px;
+    text-align: center;
+}
+.card3 img{
+    width: 150px;
+}
+
+.card3 p{
     font-size: 18px;
     margin-top: 15px;
 }

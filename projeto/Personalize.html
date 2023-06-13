@@ -32,31 +32,52 @@
 
     <section class="personalize">
         <div class="select">
+
+            <label>
+                <span>Escolha a complexidade</span>
+                <select id="select_comp" style="width: 100px;">
+                    <option value="0">----</option>
+                    <option value="50">Fácil</option>
+                    <option value="250">Médio</option>
+                    <option value="500">Complexo</option>
+                  </select>
+            </label>
+
+            <label>
+                <span>Escolha a localização</span>
+                <select id="select_loc" style="width: 100px;">
+                    <option value="0">----</option>
+                    <option value="50">peito/costas</option>
+                    <option value="75">Braço/perna</option>
+                    <option value="100">cabeça</option>
+                  </select>
+            </label>
+
             <label>
                 <span>Escolha o tamanho</span>
                 <select id="select_size" style="width: 100px;">
                     <option value="0">----</option>
-                    <option value="100">Pequeno</option>
-                    <option value="150">Médio</option>
-                    <option value="200">Grande</option>
+                    <option value="50">Pequeno</option>
+                    <option value="200">Médio</option>
+                    <option value="350">Grande</option>
                 </select>
             </label>
-           
+
             <label>
-                <span>Escola a cor</span>
+                <span>Escolha a cor</span>
                 <select id="select_color" style="width: 100px;">
                     <option value="0">----</option>
-                    <option value="300">verde</option>
-                    <option value="300">Azul</option>
                     <option value="100">Preto</option>
+                    <option value="300">Colorido</option>
                   </select>
             </label>
-            
+
             <button class="calc">Calcular</button>
+            <p class="txt"></p>
             <p class="valor"></p>
         </div>
         <div class="imagem">
-            IMG
+            <img src="./public/4243339_ux_photo_app_basic_icon.png" alt="foto" style="width: 200px;">
         </div>
     </section>
     <div class=btn_orcamento>
@@ -87,6 +108,9 @@
         var s_size = document.getElementById('select_size')
         var s_color = document.getElementById('select_color')
         var valor = document.querySelector('.valor')
+        var s_comp = document.getElementById('select_comp')
+        var s_loc = document.getElementById('select_loc')
+        var txt = document.querySelector('.txt')
 
     s_size.addEventListener('change', function(){
         size = Number(s_size.value)
@@ -94,9 +118,16 @@
     s_color.addEventListener('change', function(){
         color = Number(s_color.value)
     })
+    s_comp.addEventListener('change', function(){
+        comp = Number(s_color.value)
+    })
+    s_loc.addEventListener('change', function(){
+        loc = Number(s_color.value)
+    })
 
     calc.addEventListener('click', function(){
-        valor.innerText=`O valor da tatuagem será: R$${size+color}`
+        txt.innerText=`O valor da tatuagem será:`
+        valor.innerText=`R$${size+color+comp+loc}`
     })
     </script>
 </body>

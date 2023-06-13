@@ -89,6 +89,19 @@ li a:hover {
     border-style: none;
 }
 
+body::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../public/Wallpaper.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat:repeat;
+    background-color: #f8f5f4;
+    z-index: -1;
+    opacity: 0.2;
+}
+
 .card img{
     width: 48px;
 
@@ -112,7 +125,9 @@ section div{
     align-items: center;
     border-radius: 10px;
     box-shadow: 9px 6px 10px -1px #a5a5a5;
+    flex-direction: column;
 }
 
 section div:nth-child(2){
     background-color: #aa882c;
+}
