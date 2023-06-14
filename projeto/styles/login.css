@@ -39,6 +39,7 @@ div{
     backdrop-filter: blur(-26px) saturate(51%);
     -webkit-backdrop-filter: blur(4px) saturate(180%);
     flex-direction: column;
+    background-repeat: no-repeat;
 }
 .logo{
     margin-left: 33px;
